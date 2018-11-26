@@ -1,0 +1,192 @@
+---
+# Front matter comment to ensure Jekyll properly converts to css
+---
+
+
+/*********************
+  Dear future Karl,
+  Import scss files are kept in _sass folder (for some weird Jekyll reason!)
+  Kind regards, past Karl
+**********************/
+ @import "colours";
+ @import "fonts";
+/*********************/
+
+
+
+
+//Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Roboto;
+}
+html {font-size: 1em; /*16px*/ height: 100%;}
+body {
+  background: $bg-color;
+  border: $light-grey 1em solid;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+
+
+
+a.back-arrow {
+  position: relative;
+  display: inline-block;
+  margin-top: 2em;
+
+  .icon {
+    position: absolute;
+    top: -0.4em;
+    width: 2em;
+    fill: $grey;
+  }
+  .arrow-text {
+    padding-left: 2em;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+
+//Structure
+.wrapper {
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 2em;
+  display: grid;
+}
+header {
+  margin: 6em 0 8em 0;
+  h1 {
+    max-width: 30ch;
+    margin-top: 0;
+    span {
+      color: $grey;
+      font-weight: 400;
+    }
+  }
+}
+main {
+  ul.cards {
+    list-style: none;
+  }
+  @supports (display: grid) {
+    ul.cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+      grid-column-gap: 1.5em;
+      grid-row-gap:2.5em;
+    }
+  }
+}
+
+article {
+  section {
+    max-width: 42em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2em 0 4em 0;
+
+    &>:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .inset-text {
+    padding: 1em 1em 1em 2em;
+    border-left: $light-grey 1em solid;
+    margin: 2em 0 2em 0;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+footer {
+  border-top: $light-grey 1px solid;
+  padding: 2em 0 2em 0;
+  margin-top: 5em;
+
+  ul {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+      @media screen and (max-width: 631px) {
+        display: block;
+      }
+    }
+  }
+}
+
+ul.cards li {
+  border: 0;
+  position: relative;
+
+  h2 {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.5em;
+    max-width: 60ch;
+  }
+  .text {
+    padding: .5em 0 0 0;
+  }
+
+  a {
+    color: $grey;
+  }
+  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  a:focus {
+    outline: none;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+  &:focus-within, &:hover {
+    box-shadow: 0 0 0 4px $yellow;
+  }
+  &:focus-within a:focus {
+    text-decoration: none;
+  }
+
+}
+
+.soon {
+  margin-bottom: 1em;
+
+}
+
+
+
+
+@media screen and (max-width: 631px) {
+  article section {padding: 2em 0 2em 0;}
+  h1 {font-size: 2em}
+  h2 {font-size: 1.5em}
+  h3 {font-size: 1.2em}
+  p {font-size: 1.125em;}
+  header {margin: 3em 0 4em 0;}
+  body {border:0;}
+  .wrapper {padding: 1em;}
+}
