@@ -12,15 +12,7 @@
 <body>
 <div class="wrapper">
 
-<nav role="navigation">
-  <ul>
-    {% for page in site.pages %}
-      {% unless page.exclude %}
-        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-</nav>
+{% include navigation.html %}
 
   <header role="banner">
     <h1 class="intro">Hello, my name is Karl.<br>

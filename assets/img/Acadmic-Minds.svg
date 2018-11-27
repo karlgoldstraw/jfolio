@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="840px" height="660px" viewBox="0 0 840 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Acadmic Minds</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="100%" gradientTransform="translate(0.500000,0.500000),scale(0.786090,1.000000),rotate(90.000000),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#F7F7F7" offset="0%"></stop>
+            <stop stop-color="#E2E2E2" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Acadmic-Minds" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#E5E5E5" x="0" y="0" width="840" height="660"></rect>
+        <polygon id="Rectangle-Copy" fill="url(#radialGradient-1)" opacity="0.398507254" style="mix-blend-mode: multiply;" points="-13.462036 -10.6314701 853 -10.6314701 874.059319 687.040367"></polygon>
+        <path d="M373.800218,240.855478 L311.651984,397.927001 L311.651984,240.855478 L373.800218,240.855478 Z M426.681275,326.849943 L456.98519,250.19559 L523.757732,419.138572 L463.159183,419.138572 L426.681275,326.849943 Z M420.114448,343.468798 L450.025528,419.138572 L390.200274,419.138572 L420.114448,343.468798 Z M392.687194,240.855478 L447.538609,240.855478 L420.114448,310.237038 L392.687194,240.855478 Z M413.54762,326.849943 L377.066619,419.138572 L316.393834,419.138572 L383.240613,250.186666 L413.54762,326.849943 Z M528.351109,397.513537 L466.428678,240.855478 L528.351109,240.855478 L528.351109,397.513537 Z M299.372047,430.947567 L540.627953,430.947567 L540.627953,229.052433 L299.372047,229.052433 L299.372047,430.947567 Z" id="Fill-25" fill="#6E6E6E"></path>
+    </g>
+</svg>
