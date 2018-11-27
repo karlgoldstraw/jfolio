@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-11-25 15:17:12 +0000
-categories: jekyll update
+categories: blog
 ---
 
 

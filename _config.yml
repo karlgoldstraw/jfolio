@@ -27,8 +27,7 @@ linkedin-url: https://www.linkedin.com/in/karlgoldstraw/
 # Build settings
 markdown: kramdown
 
-plugins:
-  - jekyll-feed
+
 
 sass:
   style: compressed
