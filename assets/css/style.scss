@@ -194,6 +194,31 @@ nav.navigation ul {
   }
 }
 
+// Posts
+hr {
+  width: 11em;
+  margin: 2em 0 0 0;
+  border: 0;
+  border-top: $light-grey 1px solid;
+}
+.date {
+  font-size: 1em;
+  color: $grey;
+}
+.post-list {
+  list-style: none;
+
+  li {
+    padding-bottom: 1em;
+  }
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+
+
 
 
 

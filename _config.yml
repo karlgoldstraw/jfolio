@@ -18,7 +18,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   I am an Senior Interaction Designer, with a special interest in user centred design and accessibility.
 baseurl: "/jfolio" # the subpath of your site, e.g. /blog
 url: "https://theturning.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
 permalink: /:title/
+blogurl: design-snippets
+
 
 twitter_username: karlgoldstraw
 email: karlgoldstraw@gmail.com
@@ -28,6 +31,12 @@ linkedin-url: https://www.linkedin.com/in/karlgoldstraw/
 # Build settings
 markdown: kramdown
 
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      permalink: /design-snippets/:title/
 
 
 sass:

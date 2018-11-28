@@ -8,8 +8,12 @@ intro: Design snippets.
 order: 1
 ---
 
-
+<ul class="post-list">
   {% for post in site.posts %}
+    <li>
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.date |  date: "%-d %B %Y" }}</p>
+      <p class="date">{{ post.date |  date: "%-d %B %Y" }}</p>
+      <hr>
+    </li>
   {% endfor %}
+</ul>
