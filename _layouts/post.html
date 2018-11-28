@@ -18,6 +18,7 @@
   <main>
     <article>
       <h1>{{ page.title }}</h1>
+      <p>{{ page.date |  date: "%-d %B %Y" }}</p>
       {{ content }}
     </article>
   </main>

@@ -1,9 +1,13 @@
 <nav role="navigation">
   <ul>
-    {% for page in site.pages %}
+    {% assign pages_list = (site.pages | sort: 'order') %}
+
+    {% for page in pages_list %}
       {% unless page.exclude or page.url contains ".xml" %}
         <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
       {% endunless %}
     {% endfor %}
   </ul>
 </nav>
+
+{% assign pages_list = site.pages %}
