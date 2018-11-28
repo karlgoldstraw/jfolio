@@ -179,7 +179,20 @@ ul.cards li {
 
 
 // Navigation
+nav.navigation ul {
+  list-style: none;
+  display: flex;
 
+  li {
+    &:first-child a {
+      margin-left: -1em;
+    }
+    a {
+      display: block;
+      padding: 1em;
+    }
+  }
+}
 
 
 
