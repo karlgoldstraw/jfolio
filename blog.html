@@ -5,10 +5,10 @@
 layout: page
 title: Blog
 intro: Here are some blog posts about the things I've been up to.
-permalink: /blog/
 ---
 
 
   {% for post in site.posts %}
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.date |  date: "%-d %B %Y" }}</p>
   {% endfor %}
