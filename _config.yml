@@ -37,13 +37,15 @@ defaults:
       type: "posts"
     values:
       permalink: /design-snippets/:title/
+      author: Karl Goldstraw
 
 
 sass:
   style: compressed
   sass_dir: _sass
 
-
+plugins:
+  - jekyll-feed
 
 
 # Exclude from processing.
