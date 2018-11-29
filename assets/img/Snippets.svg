@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="840px" height="660px" viewBox="0 0 840 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Design snippets</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="74.2971721%" gradientTransform="translate(0.500000,0.500000),scale(0.785714,1.000000),rotate(90.000000),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#F7F7F7" offset="0%"></stop>
+            <stop stop-color="#E2E2E2" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Design-snippets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#E5E5E5" x="0" y="0" width="840" height="660"></rect>
+        <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="840" height="660"></rect>
+        <g id="Group" transform="translate(230.383799, 213.500000)" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#5B5B5B" x="0.388515994" y="0.215244948" width="378.414578" height="49.0936455" rx="24.5468227"></rect>
+            <rect id="Rectangle-Copy" fill="#989898" x="0.388515994" y="61.457103" width="167.838909" height="49.0936455" rx="24.5468227"></rect>
+            <rect id="Rectangle-Copy-5" fill="#989898" x="182.602517" y="61.457103" width="167.838909" height="49.0936455" rx="24.5468227"></rect>
+            <rect id="Rectangle-Copy-2" fill="#BBBBBB" x="0.388515994" y="122.698961" width="249.427268" height="49.0936455" rx="24.5468227"></rect>
+            <rect id="Rectangle-Copy-4" fill="#BBBBBB" x="266.521972" y="122.698961" width="112.281122" height="49.0936455" rx="24.5468227"></rect>
+            <rect id="Rectangle-Copy-3" fill="#D0D0D0" x="129.375826" y="183.48157" width="221.0656" height="49.0936455" rx="24.5468227"></rect>
+            <rect id="Rectangle-Copy-6" fill="#D0D0D0" x="4.66219193" y="183.48157" width="112.281122" height="49.0936455" rx="24.5468227"></rect>
+        </g>
+    </g>
+</svg>
