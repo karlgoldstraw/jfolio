@@ -3,7 +3,7 @@
     {% assign pages_list = (site.pages | sort: 'order') %}
 
     {% for page in pages_list %}
-      {% unless page.exclude or page.url contains ".xml" %}
+      {% unless page.exclude or page.url contains ".xml" or page.url contains ".txt" %}
         <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
       {% endunless %}
     {% endfor %}
