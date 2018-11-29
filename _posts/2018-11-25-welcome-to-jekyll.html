@@ -9,10 +9,11 @@ title: Welcome to Jekyll and this is much longer but won't break my url!
 </section>
 
 
-<picture>
-  <source media="(max-width: 631px)" srcset="{{ "/assets/img/placeholder-mobile.jpg" | prepend: site.baseurl }}">
-  <img src="{{ "/assets/img/citizens1.jpg" | prepend: site.baseurl }}" alt="My image">
-</picture>
+{% include image.html
+  desktop="assets/img/citizens1.jpg"
+  mobile="assets/img/placeholder-mobile.jpg"
+  alt="The dashboard shown in laptop, tablet and iphone screens"
+%}
 
 <section>
 
