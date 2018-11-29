@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Karl Goldstraw
+title: Karl Goldstraw - Interaction Designer
 description: >- # this means to ignore newlines until "baseurl:"
   I am an Senior Interaction Designer, with a special interest in user centred design and accessibility.
 baseurl: "/jfolio" # the subpath of your site, e.g. /blog
@@ -46,6 +46,8 @@ sass:
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 
 # Exclude from processing.
