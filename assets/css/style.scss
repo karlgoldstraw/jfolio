@@ -29,11 +29,24 @@ body {
   border: $light-grey 1em solid;
   min-height: 100%;
   min-width: 100%;
+  position: relative;
 }
 body.post {
     background: $yellow-tint;
 }
 
+.notification {
+  position: relative;
+  top: 0;
+  background: yellow;
+  width: 100%;
+  padding: 1em;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 
 
