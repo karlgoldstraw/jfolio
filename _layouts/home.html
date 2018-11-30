@@ -10,6 +10,7 @@
 </head>
 
 <body>
+{% include skiplinks.html %}
 {% include notification.html %}
 <div class="wrapper">
 
@@ -20,7 +21,7 @@
     <span>I’m a senior <span class="highlight">interaction designer</span>.</span></h1>
   </header>
 
-  <main>
+  <main id="main">
     {{ content }}
   </main>
 

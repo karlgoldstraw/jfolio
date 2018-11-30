@@ -72,6 +72,18 @@ img {
   display: block;
 }
 
+.skiplinks {
+  left: -9999px;
+  top: -9999px;
+  position: absolute;
+
+  &:active, &:focus {
+    left: .5em;
+    top: .5em;
+    z-index: 99;
+  }
+}
+
 
 
 

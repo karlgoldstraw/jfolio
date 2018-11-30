@@ -10,6 +10,7 @@
 </head>
 
 <body>
+{% include skiplinks.html %}
 {% include notification.html %}
 <div class="wrapper">
 
@@ -24,7 +25,7 @@
     <hr>
   </header>
 
-  <main>
+  <main id="main">
     <article>
       {{ content }}
     </article>
