@@ -17,14 +17,14 @@ h3 {
   font-size: 1.5em;
   margin-top: 1.1em;
 }
-p {
+p, section ul {
   line-height: 1.5em;
   margin-top: 1em;
   font-size: 1.3em;
 }
 a {
   text-decoration: underline;
-  color: $grey;
+  color: $black;
 
   &:hover {
     color: $black;
@@ -37,6 +37,10 @@ a {
     text-decoration: none;
   }
 
+}
+
+section ul {
+  margin-left: 1em;
 }
 
 span.highlight {
