@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/jfolio" # the subpath of your site, e.g. /blog
 url: "https://theturning.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-permalink: /:title/
+permalink: pretty
 blogurl: design-snippets
 
 
