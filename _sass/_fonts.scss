@@ -29,14 +29,12 @@ a {
   &:hover {
     color: $black;
   }
-
   &:focus {
     background-color: $yellow;
     color: $black;
     outline: none;
     text-decoration: none;
   }
-
 }
 
 section ul {
