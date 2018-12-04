@@ -23,13 +23,24 @@ exclude: true
   box-sizing: border-box;
   font-family: $Roboto;
 }
-html {font-size: 1em; /*16px*/ height: 100%;}
+article, aside, footer, header,nav, section {
+  display: block;
+}
+
+html {
+  font-size: 16px; /*base em size*/
+  height: 100%;
+  overflow-y: scroll;
+}
 body {
   background: $bg-color;
   border: $light-grey 1em solid;
+  margin: 0;
   min-height: 100%;
   min-width: 100%;
   position: relative;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 body.post {
   background: $yellow-tint;
