@@ -27,13 +27,16 @@ a {
   color: $black;
 
   &:hover {
-    color: $black;
+    color: $grey;
   }
   &:focus {
     background-color: $yellow;
     color: $black;
     outline: none;
     text-decoration: none;
+  }
+  &.active {
+    font-weight: 500;
   }
 }
 

@@ -2,9 +2,15 @@
   <ul>
     {% assign pages_list = (site.pages | sort: 'order') %}
 
-    {% for page in pages_list %}
-      {% unless page.exclude or page.url contains ".xml" or page.url contains ".txt" %}
-        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+    {% for node in pages_list %}
+      {% unless node.exclude or node.url contains ".xml" or node.url contains ".txt" %}
+
+        {% if page.url == node.url %}
+          <li><a class="active" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+        {% else %}
+          <li><a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+
       {% endunless %}
     {% endfor %}
   </ul>
