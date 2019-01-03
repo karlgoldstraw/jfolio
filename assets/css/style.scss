@@ -46,7 +46,7 @@ body.post {
   background: $yellow-tint;
 
   header {
-    margin: 6em 0 2em 0;
+    margin: 0 0 2em 0;
   }
 }
 
@@ -110,7 +110,8 @@ img {
   display: grid;
 }
 header {
-  margin: 6em 0 8em 0;
+  margin: 0 0 8em 0;
+
   h1 {
     max-width: 30ch;
     margin-top: 0;
@@ -225,6 +226,7 @@ ul.cards li {
 nav.navigation ul {
   list-style: none;
   display: flex;
+  margin-bottom: 6em;
 
   li {
     &:first-child a {
@@ -287,7 +289,7 @@ hr {
   h2 {font-size: 1.5em}
   h3 {font-size: 1.2em}
   p, section ul {font-size: 1.125em;}
-  header {margin: 3em 0 4em 0;}
+  header {margin: 0 0 4em 0;}
   body {border:0;}
   .wrapper {padding: 1em;}
   section .inset-text {padding-left: 1em;}

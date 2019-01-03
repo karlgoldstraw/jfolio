@@ -14,9 +14,10 @@
 {% include notification.html %}
 <div class="wrapper">
 
-{% include navigation.html %}
 
   <header role="banner">
+    {% include navigation.html %}
+
     <h1>{{ page.intro }}</h1>
     {%if page.lead %}
       <p class="date">{{ page.lead }}</p>
