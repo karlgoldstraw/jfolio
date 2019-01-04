@@ -69,6 +69,7 @@ a.back-arrow {
   position: relative;
   display: inline-block;
   margin-top: 2em;
+  font-size: 1.3em;
 
   .icon {
     position: absolute;
@@ -227,6 +228,7 @@ nav.navigation ul {
   list-style: none;
   display: flex;
   margin-bottom: 6em;
+  font-size: 1.3em;
 
   li {
     &:first-child a {
