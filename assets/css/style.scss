@@ -233,7 +233,7 @@ ul.cards li {
     background-color: transparent;
   }
   &:focus-within, &:hover {
-    box-shadow: 0 0 0 4px $yellow;
+    box-shadow: 0 0 0 4px $highlight;
   }
   &:focus-within a:focus {
     text-decoration: none;
@@ -266,6 +266,9 @@ hr {
   margin: 2em 0 0 0;
   border: 0;
   border-top: $light-grey 1px solid;
+}
+.post hr {
+  border-top: $yellow-dark 1px solid;
 }
 .date {
   color: $grey;
