@@ -40,6 +40,12 @@ defaults:
       author: Karl Goldstraw
 
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/favicon.png
+
 sass:
   style: compressed
   sass_dir: _sass
