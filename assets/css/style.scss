@@ -44,6 +44,7 @@ body {
 }
 body.post {
   background: $yellow-tint;
+  border: $yellow-dark 1em solid;
 
   header {
     margin: 0 0 2em 0;
@@ -160,6 +161,14 @@ article {
       margin: 0;
     }
   }
+
+  iframe {
+    margin: 2em 0 0 0;
+  }
+}
+
+.post .inset-text {
+  border-left: $yellow-dark 1em solid;
 }
 
 footer {
