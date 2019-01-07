@@ -247,11 +247,12 @@ nav.navigation ul {
   list-style: none;
   display: flex;
   margin-bottom: 6em;
+  margin-top: 1em;
   font-size: 1.3em;
 
   li {
     &:first-child a {
-      margin-left: -1em;
+      margin-left: -0.75em;
     }
     a {
       display: block;
