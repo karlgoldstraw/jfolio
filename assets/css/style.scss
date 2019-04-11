@@ -50,19 +50,24 @@ body.post {
     margin: 0 0 2em 0;
   }
 }
-
+@keyframes bannergate {
+  0%   {top:-100px; opacity: 0;}
+  100% {top:0; opacity: 1;}
+}
 .notification {
   position: relative;
-  top: 0;
-  background: yellow;
   width: 100%;
   padding: 1em;
-
+  background: $highlight;
+  animation-name: bannergate;
+  animation-duration: 0.5s;
   p {
     margin: 0;
     padding: 0;
   }
 }
+
+
 
 
 
@@ -111,6 +116,8 @@ img {
   padding: 2em;
   display: grid;
 }
+
+
 header {
   margin: 0 0 8em 0;
 
