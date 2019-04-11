@@ -51,8 +51,8 @@ body.post {
   }
 }
 @keyframes bannergate {
-  0%   {top:-100px; opacity: 0;}
-  100% {top:0; opacity: 1;}
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }
 .notification {
   position: relative;
@@ -60,7 +60,7 @@ body.post {
   padding: 1em;
   background: $highlight;
   animation-name: bannergate;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   p {
     margin: 0;
     padding: 0;
