@@ -8,35 +8,72 @@ title: Designing Responsive and Accessible Tables
 
   <p>I've seen tables treated very differently across the web. Either they get squashed into the viewport, or they are fixed-width and require a user to know to scroll across horizontally. Users tend to not like scrolling, especially horizontally.</p>
 
-  <p>Examples or tables:
-  <ul>
-    <li><a href="https://design-system.service.gov.uk/components/table/">GOV.uk tables</a> are fixed width and currently require users to scroll</li>
-    <li><a href="https://www.moneysavingexpert.com/deals/deals-hunter/2018/12/nandos-moneysaving-hacks/">MoneySavingExpert.com</a> does the same, but offers some affordance in the form of little left and right arrows.</li>
-    <li>Whilst many other sites simply <br>
-    create <br>
-    many <br>
-    line- <br>
-    breaks <br>
-    in a <br>
-    column <br>
-    to fit <br>
-    content in.</li>
-  </ul></p>
+  {% include image.html
+    desktop="assets/img/Desktop-table1.jpg"
+    mobile="assets/img/Mobile-table1.jpg"
+    alt="A screenshot of a table with 4 rows and 4 columns. The forth column is visually cut off the endge of the screen."
+    caption="MoneySavingExpert.com uses affordance to tell users to scroll horizontally"
+  %}
 
-{% include image.html
-  desktop="assets/img/Desktop-table1.jpg"
-  mobile="assets/img/Mobile-table1.jpg"
-  alt="A screenshot of a table with 4 rows and 4 columns. The forth column is visually cut off the endge of the screen."
-  caption="MoneySavingExpert.com uses affordance to tell users to scroll horizontally"
-%}
-</section>
+  <h2>Creating a responsive table</h2>
+  <p>I've been working on a way to display tables on a small screen. You can change the layout of a table easily using CSS. The problem is though, accessibility with screenreaders.</p>
+
+  <p>When you add <code>display:block/grid/flex;</code> to a table, or cells within, then screenreaders such as iOS VoiceOver no longer recognise the elements as a table and thus are not announced as such. It’s true you could use divs and tag them up with ARIA, but then you’re losing the semantic nature of native tables, and you're giving yourself a lot of extra code each time you want to insert a simple table.</p>
+
+  <p>As a fix, I've found that you need to add <code>roles</code> to each of the table, th, td, etc, markup. For example, add:</p>
+
+    <ul>
+      <li><code>role=”table"</code> to the table</li>
+      <li><code>role="row"</code> to the rows</li>
+      <li><code>role="columnheader"</code> to the th's</li>
+      <li><code>role="cell"</code> to the td's</li>
+    </ul>
+
+  <p>These attribute additions help VoiceOver to recognise the table as a table once again whilst displaying responsively and you're only adding a little bit of code to an already semantic element. I tested these on Mac VoiceOver, iPhone VoiceOver and NVDA with IE11.</p>
+
+  <p>Once you have these in place, then you can apply <code>display:block;</code> or whatever to your table element and make it change appearance.</p>
+
+  <p>For my example, I hid the <code>&lt;th&gt;</code>'s with the non-accessible <code>display:none;</code> I really don't want anyone to see this, including screenreaders.</p>
+
+  <p>I then used <code>data-label</code> on each cell, which is a replication of the respective <code>&lt;th&gt;</code> to show with each data field. This is really easy to set up in a template, especially if you are using dynamic fields for your table from your CMS.</p>
+
+  <p>An advantage of showing <code>data-label</code> on each cell alongside it's data cell for users with access needs who zoom the screen is that they wouldn;t lose context when zoomed at a high percentage.</p>
+
+  <p>Here's an example of my responsive table: (view the source):</p>
+
+  <table role=”table”>
+    <caption>This is a proof of concept table</caption>
+    <thead>
+      <tr role="row">
+        <th role="columnheader" scope="col">Header one</th>
+        <th role="columnheader" scope="col">Header two</th>
+        <th role="columnheader" scope="col">Header three</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr role="row">
+        <td role="cell" data-label="Header one">Example data</td>
+        <td role="cell" data-label="Header two">Example data</td>
+        <td role="cell" data-label="Header three">Example data</td>
+      </tr>
+      <tr role="row">
+        <td role="cell" data-label="Header one">Example data</td>
+        <td role="cell" data-label="Header two">Example data</td>
+        <td role="cell" data-label="Header three">Example data</td>
+      </tr>
+      <tr role="row">
+        <td role="cell" data-label="Header one">Example data</td>
+        <td role="cell" data-label="Header two">Example data</td>
+        <td role="cell" data-label="Header three">Example data</td>
+      </tr>
+      <tr role="row">
+        <td role="cell" data-label="Header one">Example data</td>
+        <td role="cell" data-label="Header two">Example data</td>
+        <td role="cell" data-label="Header three">Example data</td>
+      </tr>
+    </tbody>
+  </table>
 
 
-<section>
-  <ul>
-    <li>People are building Responsive Tables (examples)</li>
-    <li>Accessibility issues (display:block - screenreaders)</li>
-    <li>My solution</li>
-    <li>Testing</li>
-  </ul>
+
 </section>
