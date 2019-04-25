@@ -161,7 +161,7 @@ article {
     }
 
     img {
-      margin: 2em 0 2em 0;
+      margin: 2em 0 0 0;
     }
 
   }
@@ -313,6 +313,13 @@ hr {
     border: $light-grey 1px solid;
     font-size: 1em;
   }
+}
+figcaption {
+  padding: 1em;
+  background: $bg-color;
+}
+iframe {
+  display: block;
 }
 
 

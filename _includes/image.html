@@ -1,4 +1,10 @@
-<picture>
-  <source media="(max-width: 631px)" srcset="{{ site.baseurl }}/{{ include.mobile }}">
-  <img src="{{ site.baseurl }}/{{ include.desktop }}" alt="{{ include.alt }}">
-</picture>
+<figure>
+  <picture>
+    <source media="(max-width: 631px)" srcset="{{ site.baseurl }}/{{ include.mobile }}">
+    <img src="{{ site.baseurl }}/{{ include.desktop }}" alt="{{ include.alt }}">
+  </picture>
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% else %}
+  {% endif %}
+</figure>

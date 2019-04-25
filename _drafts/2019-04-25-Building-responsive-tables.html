@@ -1,0 +1,42 @@
+---
+layout: post
+title: Designing Responsive and Accessible Tables
+---
+
+<section>
+  <p>Tables can be a pain to display especially on smaller screens.</p>
+
+  <p>I've seen tables treated very differently across the web. Either they get squashed into the viewport, or they are fixed-width and require a user to know to scroll across horizontally. Users tend to not like scrolling, especially horizontally.</p>
+
+  <p>Examples or tables:
+  <ul>
+    <li><a href="https://design-system.service.gov.uk/components/table/">GOV.uk tables</a> are fixed width and currently require users to scroll</li>
+    <li><a href="https://www.moneysavingexpert.com/deals/deals-hunter/2018/12/nandos-moneysaving-hacks/">MoneySavingExpert.com</a> does the same, but offers some affordance in the form of little left and right arrows.</li>
+    <li>Whilst many other sites simply <br>
+    create <br>
+    many <br>
+    line- <br>
+    breaks <br>
+    in a <br>
+    column <br>
+    to fit <br>
+    content in.</li>
+  </ul></p>
+
+{% include image.html
+  desktop="assets/img/Desktop-table1.jpg"
+  mobile="assets/img/Mobile-table1.jpg"
+  alt="A screenshot of a table with 4 rows and 4 columns. The forth column is visually cut off the endge of the screen."
+  caption="MoneySavingExpert.com uses affordance to tell users to scroll horizontally"
+%}
+</section>
+
+
+<section>
+  <ul>
+    <li>People are building Responsive Tables (examples)</li>
+    <li>Accessibility issues (display:block - screenreaders)</li>
+    <li>My solution</li>
+    <li>Testing</li>
+  </ul>
+</section>
