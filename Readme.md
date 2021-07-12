@@ -1,3 +1,3 @@
 # Readme
 
-Yes, I'm appalled with my commit messages.
+I'm also appalled with my commit messages.
