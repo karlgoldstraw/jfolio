@@ -43,9 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body.post {
-  background: $yellow-tint;
-  border: $yellow-dark 1em solid;
-
+  
   header {
     margin: 0 0 2em 0;
   }
@@ -196,9 +194,9 @@ section.imagewrap {
 
 
 
-.post .inset-text {
+/*.post .inset-text {
   border-left: $yellow-dark 1em solid;
-}
+}*/
 
 footer {
   border-top: $light-grey 1px solid;
