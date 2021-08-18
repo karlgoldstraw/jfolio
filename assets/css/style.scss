@@ -43,7 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body.post {
-  
+
   header {
     margin: 0 0 2em 0;
   }
@@ -122,7 +122,7 @@ img {
 
 
 header {
-  margin: 0 0 8em 0;
+  margin: 0 0 2em 0;
 
   h1 {
     max-width: 30ch;
@@ -136,6 +136,7 @@ header {
 main {
   ul.cards {
     list-style: none;
+    margin: 4em 0 0 0;
   }
   @supports (display: grid) {
     ul.cards {
@@ -150,8 +151,7 @@ main {
 article {
   section {
     max-width: 42em;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 0;
     padding: 2em 0 4em 0;
 
     &>:last-child {
@@ -250,7 +250,7 @@ ul.cards li {
     background-color: transparent;
   }
   &:focus-within, &:hover {
-    box-shadow: 0 0 0 4px $highlight;
+    box-shadow: 0 0 0 4px $yellow;
   }
   &:focus-within a:focus {
     text-decoration: none;
@@ -283,7 +283,7 @@ hr {
   width: 11em;
   margin: 2em 0 0 0;
   border: 0;
-  border-top: $light-grey 1px solid;
+  border-top: $light-grey 8px solid;
 }
 .post hr {
   border-top: $yellow-dark 1px solid;
