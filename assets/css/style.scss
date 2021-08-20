@@ -244,10 +244,14 @@ ul.cards li {
     right: 0;
     bottom: 0;
   }
+  a:hover {
+    text-decoration-thickness: 2px;
+  }
   a:focus {
     outline: none;
     text-decoration: underline;
     background-color: transparent;
+    box-shadow: none;
   }
   &:focus-within, &:hover {
     box-shadow: 0 0 0 4px $yellow;

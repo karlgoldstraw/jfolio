@@ -31,13 +31,14 @@ a {
   color: $black;
 
   &:hover {
-    color: $grey;
+    text-decoration-thickness: 4px;
   }
   &:focus {
     background-color: $yellow;
     color: $black;
     outline: none;
     text-decoration: none;
+    box-shadow: 0 -2px $yellow, 0 4px #0b0c0c;
   }
   &.active {
     font-weight: 500;
