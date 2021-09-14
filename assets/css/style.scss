@@ -257,7 +257,8 @@ ul.cards li {
     box-shadow: 0 0 0 4px $yellow;
   }
   &:focus-within a:focus {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
   }
 
 }
