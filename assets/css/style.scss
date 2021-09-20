@@ -95,6 +95,7 @@ a.back-arrow {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 0.5em;
 }
 
 .skiplinks {
@@ -255,10 +256,14 @@ ul.cards li {
   }
   &:focus-within, &:hover {
     box-shadow: 0 0 0 4px $yellow;
+    border-radius: 0.5em;
   }
   &:focus-within a:focus {
     text-decoration: underline;
     text-decoration-thickness: 2px;
+  }
+  img {
+    border-radius: 0.5em;
   }
 
 }
