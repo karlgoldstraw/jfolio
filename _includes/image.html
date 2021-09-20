@@ -1,7 +1,7 @@
 <figure>
   <picture>
-    <source media="(max-width: 631px)" srcset="{{ site.baseurl }}/{{ include.mobile }}">
-    <img src="{{ site.baseurl }}/{{ include.desktop }}" alt="{{ include.alt }}">
+    <!--<source media="(max-width: 631px)" srcset="{{ site.baseurl }}/{{ include.mobile }}">-->
+    <img src="{{ site.baseurl }}/{{ include.desktop }}" alt="{{ include.alt }}" loading="lazy">
   </picture>
   {% if include.caption %}
     <figcaption>{{ include.caption }}</figcaption>
