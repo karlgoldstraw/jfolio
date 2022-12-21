@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Karl Goldstraw - Interaction Designer
 description: >- # this means to ignore newlines until "baseurl:"
-  I am an Senior Interaction Designer, with a special interest in accessibility.
+  I am an Senior Product Designer, with a special interest in accessibility.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://theturning.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 
