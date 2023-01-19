@@ -192,7 +192,46 @@ section.imagewrap {
   }
 }
 
+article.cv {
 
+  section {
+    background-color: white;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    padding: 0;
+    padding: 60px 30px 30px 30px;
+    position: relative;
+
+      h2 {
+        display: inline-block;
+        position: absolute;
+        padding: 10px 70px 10px 20px;
+        background: #FFEB9D;
+        margin: 0;
+        margin-top: -90px;
+        margin-left: -30px;
+        
+      }
+
+  }
+  
+  ul {
+    margin-left: 40px;
+  }
+
+  h3 {
+    margin-top: 40px;
+
+    .first {
+      margin-top: 0;
+      background-color: pink;
+    }
+  }
+  .lede {
+    margin: 0;
+  }
+
+}
 
 
 /*.post .inset-text {
